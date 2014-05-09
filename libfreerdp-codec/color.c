@@ -795,7 +795,6 @@ uint8* freerdp_icon_convert(uint8* srcData, uint8* dstData, uint8* mask, int wid
 	int maskIndex;
 	uint8* data;
 	uint8 bmask;
-	uint32 pmask;
 	uint32* icon;
 	
 	if (bpp == 16)
