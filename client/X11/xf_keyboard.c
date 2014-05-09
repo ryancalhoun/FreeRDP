@@ -164,6 +164,8 @@ void xf_kbd_focus_in(xfInfo* xfi)
 	rdpInput* input;
 	uint32 syncFlags;
 
+	memset(xfi->pressed_keys, 0, 256 * sizeof(boolean));
+
 	input = xfi->instance->input;
 
 	/* on focus in send a tab up like mstsc.exe */
